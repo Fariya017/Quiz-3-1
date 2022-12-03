@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ 3</title>
+</head>
+<h2>QUIZ 3</h2>
+<p>Q1) Use users data and make following functions to perform on them:
+<ol>
+    <li>Add new user in the users array</li>
+    <li>get user by his email or id (use any one email or id)</li>
+    <li>delete user from users data</li>
+</ol>
+users = <br>[{
+id: 1, name: "Jack", pass: 123456
+}
+<br>{
+id: 2, name: "Ali", pass: 123456
+} <br> {
+id: 3, name: "Ahmed", pass: 789000
+}] <br><br>
+
+Q2) Make a grading system which will print your grade:
+<br>~ 90 > A+
+<br>~ 75 > A
+<br>~ 60 > B
+<br>~ 50 > C
+<br>~ 50 < F </p>
+
+    <body>
+
+        <script>
+            //Q1-Add new user in the users array
+            users1 = [{
+                id: 1, name: "Jack", pass: 123456
+            }, {
+                id: 2, name: "Ali", pass: 123456
+            }, {
+                id: 3, name: "Ahmed", pass: 789000
+            }]
+
+
+            function addtoarray(addThis) {
+
+                users1.push({ id: 4, name: "Sam", pass: 235689 });
+                console.log(users1);
+            }
+            addtoarray()
+
+            //Q1-get user by his email or id (use any one email or id)
+            users2 = [{
+                id: 1, name: "Jack", pass: 123456
+            }, {
+                id: 2, name: "Ali", pass: 123456
+            }, {
+                id: 3, name: "Ahmed", pass: 789000
+            }]
+            for(i=0; i<=users2.lenght; i++){
+                console.log(users2[1])
+            }
+
+            //Q1-delete user from users data
+            users3 = [{
+                id: 1, name: "Jack", pass: 123456
+            }, {
+                id: 2, name: "Ali", pass: 123456
+            }, {
+                id: 3, name: "Ahmed", pass: 789000
+            }]
+            function deletetoarray(removeThis) {
+
+                users3.pop();
+                console.log(users3);
+            }
+            deletetoarray()
+
+            //Q2
+            let num = prompt('Write a Number');
+            if (num > 90) {
+                console.log("A+");
+            }
+            else if (num > 75) {
+                console.log("A");
+            }
+            else if (num > 60) {
+                console.log("B");   //false
+            }
+            else if (num > 50) {
+                console.log("C");   //false
+            }
+            else {
+                console.log("F")
+            }
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>
